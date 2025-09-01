@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card UI</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-black text-white flex flex-col justify-center items-center gap-12 py-24">
+    <h1 class="text-3xl font-bold">Card Add / Remove </h1>
+    <form class="form flex flex-col gap-4 border border-gray-200 rounded-md p-4">
+        <input class="bg-gray-800 border border-1 border-gray-200 rounded-md px-2 py-1" type="text" id="name" placeholder="Name">
+        <input class="bg-gray-800 border border-1 border-gray-200 rounded-md px-2 py-1" type="text" id="role" placeholder="Role">
+        <input class="bg-gray-800 border border-1 border-gray-200 rounded-md px-2 py-1" type="url" id="profilePic" placeholder="Profile Picture URL">
+        <input class="bg-gray-900 py-2 border border-gray-200 rounded-md hover:bg-gray-700 cursor-pointer" type="submit" value="Add Card">
+    </form>
+
+    <div class="cards flex flex-wrap gap-8 items-center justify-center">
+        <!-- Cards will be appended here -->
+         <div class="card w-xs rounded-md p-4 border border-gray-200 flex flex-col justify-center items-center gap-4">
+            <img class="rounded-full w-20 h-20 object-cover object-center" src="https://plus.unsplash.com/premium_photo-1755387617084-831dceee26b5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Profile Pic">
+            <h3 class="text-xl">User Name</h3>
+            <p class="text-xl">User Role</p>
+         </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
