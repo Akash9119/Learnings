@@ -1,0 +1,22 @@
+{
+  "name": "first-backend-app",
+  "version": "1.0.0",
+  "description": "This is the first backend app created using node and express",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "akash",
+    "node-app",
+    "first-node-app"
+  ],
+  "author": "Akash Vasava",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "npm": "^11.6.0"
+  }
+}
