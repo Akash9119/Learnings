@@ -45,8 +45,6 @@ const CounterReducer = () => {
 
         <input type="Custom-increment" value={number} onChange={(e) => {setNumber(e.target.value)}} />
         <button onClick={incrementCustom}>Add Custom Value</button>
-
-        <input type="Custom-decrement" value={number} onChange={(e) => {setNumber(e.target.value)}} />
         <button onClick={decrementCustom}>Remove Custom Value</button>
     </div>
   )
