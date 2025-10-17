@@ -1,34 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import AdminInfo from './components/AdminInfo'
+import UserInfo from './components/UserInfo'
+import { type Info, type AdminInformation } from './types'
+const App = () => {
 
-function App() {
-  const [count, setCount] = useState(0)
+  const user : Info = {
+    id: 1,
+    name: 'John Doe',
+    email: 'johndoe@example.com'
+  }
+
+  const admin : AdminInformation = {
+    id: 1,
+    name: 'Akash Vasava',
+    email: 'akashj.vasava@gamil.com',
+    role: 'admin',
+    lastLogin: new Date()
+  }
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      <AdminInfo admin={admin} />
+      <UserInfo user={user} />
+    </div>
   )
 }
 
