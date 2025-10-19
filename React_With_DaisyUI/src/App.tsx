@@ -2,14 +2,14 @@
 const App = () => {
   return (
     <div>
-      <button class="btn btn-dash">Default</button>
-<button class="btn btn-dash btn-primary">Primary</button>
-<button class="btn btn-dash btn-secondary">Secondary</button>
-<button class="btn btn-dash btn-accent">Accent</button>
-<button class="btn btn-dash btn-info">Info</button>
-<button class="btn btn-dash btn-success">Success</button>
-<button class="btn btn-dash btn-warning">Warning</button>
-<button class="btn btn-dash btn-error">Error</button>
+      <button className="btn btn-dash">Default</button>
+<button className="btn btn-dash btn-primary">Primary</button>
+<button className="btn btn-dash btn-secondary">Secondary</button>
+<button className="btn btn-dash btn-accent">Accent</button>
+<button className="btn btn-dash btn-info">Info</button>
+<button className="btn btn-dash btn-success">Success</button>
+<button className="btn btn-dash btn-warning">Warning</button>
+<button className="btn btn-dash btn-error">Error</button>
     </div>
   )
 }
